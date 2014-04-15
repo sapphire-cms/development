@@ -23,7 +23,7 @@
 	<body>
 
 
-
+<div id="mainstyle">
 	<div id="header-style">
 		<input id="showLeft" type = "image" src = "img/menu.png" name = "open" value = "open" alt="Меню" />
 		<form action="new-topic.php">
@@ -32,7 +32,7 @@
 
 </div> <!--header-style -->
 								
-							
+
 	<div id="content-block">
 
 <?php 
@@ -45,7 +45,7 @@
 		}	
 ?>
 	<div id="lower-info"></div>
-	</div>
+	</div></div>
 
 
 	</body>
