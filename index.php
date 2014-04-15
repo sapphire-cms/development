@@ -25,15 +25,14 @@
 
 <div id="mainstyle">
 	<div id="header-style">
-		<input id="showLeft" type = "image" src = "img/menu.png" name = "open" value = "open" alt="Меню" />
+                <input id="showLeft" type = "image" src = "img/menu.png" name = "open" value = "open" alt="Меню" />
 		<form action="new-topic.php">
 		<input id="b-newtopic" type = "image" src = "img/new-topic.png" alt="Новая статья" /></form>
 							
 
-</div> <!--header-style -->
-								
-
-	<div id="content-block">
+</div> 
+    
+    <div id="content-block">
 
 <?php 
 		if (isset($posts) && $post = $posts->getPosts()) {
