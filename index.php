@@ -23,16 +23,29 @@
 	<body>
 
 
+<<<<<<< HEAD
 <div id="mainstyle">
 	<div id="header-style">
                 <input id="showLeft" type = "image" src = "img/menu.png" name = "open" value = "open" alt="Меню" />
+=======
+
+	<div id="header-style">
+		<input id="showLeft" type = "image" src = "img/menu.png" name = "open" value = "open" alt="Меню" />
+>>>>>>> 2dfd8397ecee311578d4641dd99e3525494ac97b
 		<form action="new-topic.php">
 		<input id="b-newtopic" type = "image" src = "img/new-topic.png" alt="Новая статья" /></form>
 							
 
+<<<<<<< HEAD
 </div> 
     
     <div id="content-block">
+=======
+</div> <!--header-style -->
+								
+							
+	<div id="content-block">
+>>>>>>> 2dfd8397ecee311578d4641dd99e3525494ac97b
 
 <?php 
 		if (isset($posts) && $post = $posts->getPosts()) {
@@ -44,7 +57,11 @@
 		}	
 ?>
 	<div id="lower-info"></div>
+<<<<<<< HEAD
 	</div></div>
+=======
+	</div>
+>>>>>>> 2dfd8397ecee311578d4641dd99e3525494ac97b
 
 
 	</body>
