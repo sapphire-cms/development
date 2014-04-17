@@ -1,11 +1,13 @@
 body {
 	margin: 0;
-	display: block;
+
 }
 
 
 
-#header-style {
+
+
+#header {
 	background:  #00BFFF;
 	height: 60px; 
 }
@@ -16,17 +18,12 @@ a {
 	color: black;
 	text-decoration: none;
 }
-a:hover {
-	text-decoration: none;
-}
 
 
-#mainstyle {
+#wrapper {
 	outline: 2px solid #F5F5F5;
 	background: #FFF;
 	width: 1000px;
-	-moz-width: 1000px;
-	-moz-height: 1500px;
 	margin: 0 auto;
 }
 
@@ -43,20 +40,13 @@ a:hover {
 }
 
 
-#content-block {
-	margin-top: 30px;
-	moz-margin-top: 20px;
-	margin-left: 20px;
-	moz-margin-left: 200px;
-	margin-right: 20px;
-}
 
 #header-newtopic {
 	margin-top: 10px;
 	-moz-margin-top: 10px;
 }
 
-#content-block textarea {
+#content textarea {
  	margin-left: 10px;
  	moz-margin-left: 10px;
  	width: 930px;
@@ -86,7 +76,6 @@ a:hover {
 
 #title-topic {
 	font-family: GranaPadano, Arial, Times New Roman, Tahoma;
-	width: 940px;
 	background: #4682B4;
 	color: #F5F5F5;
 	font-size: 20px;
@@ -100,14 +89,12 @@ a:hover {
 	font-family: Times New Roman, Tahoma;
 	padding: 15px;
 	text-indent: 10px;
-	width: 925px;
 	background: #F5F5F5;
 }
 
 #info-topic {
 	font-size: 10px;
-	padding-left: 855px;
-	width: 100px;
+	padding-left: 925px;
 	border-top: #FF0000;
 	background: #F5F5F5;
 
@@ -115,17 +102,16 @@ a:hover {
 }
 
 
-#lower-info {
-	outline: none;
+#footer {
 	background: #00BFFF;
-	margin-left: -20px;
-	margin-top: 1300px; 
 	width: 1000px;
-	height: 45px;
+	height: 35px;
 	border-radius: 0px 0px 0px 0px;
+	padding-top: 20px;
+	text-align: center;
 }
 
-#showLeft  {
+#showMenu  {
 	float: left;
 	margin-top: 23px;
 	margin-left: 30px;
@@ -171,7 +157,7 @@ a:hover {
 
 
 
-#menu-style {
+#sidebar {
 	position:absolute;
 	width: 250px;
 	height: 700px;
@@ -183,19 +169,23 @@ a:hover {
 	margin: 0 auto;
 	display: block;
 	width: 250px;
-	height: 100px;
+	height: 120px;
 	background: #336699;
 	padding-top: 30px;
 }
 
-#menu-style input {
-	margin-left: 30px;
-	display: block;
-	width: 180px;
-	border-radius: 0px 0px 0px 0px;
+#sidebar input {
+	width: 170px;
+	font: 14px serif;
+	padding: 6px 0px 4px 30px;
+	border: 1px solid #cecece;
+	background: #F6F6f6;
+	border-radius: 1px;
+    margin-bottom: 3px;
+    margin-left: 20px;
 }
 
-#menu-style button { 
+#sidebar button { 
 	border-radius: 0px 0px 0px 0px;
 	background: #00BFFF;
 	font-family: GranaPadano, Arial, Times New Roman, Tahoma;
@@ -207,18 +197,13 @@ a:hover {
 	cursor: pointer;
 }
 
-#menu-style button:hover{ 
-	border-radius: 0px 0px 0px 0px;
+#sidebar button:hover{ 
 	background: #258ecd;
-	font-family: GranaPadano, Arial, Times New Roman, Tahoma;
-	font-size: 14px;
-	text-shadow: none;
 	color: #d6dadb;
-	border: none;
 
 }
 
-#menu-style a {
+#sidebar nav a {
 	font-family: GranaPadano, Arial, Times New Roman, Tahoma;
 	font-size: 1.4em;
 	display: block;
@@ -228,13 +213,22 @@ a:hover {
 	border-bottom: 1px solid #336699;
 }
 
-#menu-style a:hover {
-	display: block;
+#sidebar nav a:hover {
 	background: #258ecd;
 	color: #d6dadb;
 }
 
-
+.forgot-password {
+    color: white;
+    font: 14px GranaPadano;
+    float: right;
+    margin-right: 28px;
+    
+}
+.forgot-password a:hover {
+    text-decoration: underline;
+    color: #cecece;
+}
 
 .register {
 	font-family: GranaPadano, Arial, Times New Roman, Tahoma;
@@ -273,7 +267,6 @@ a:hover {
 	float: right;
 }
 
-}
 
 form {
 	margin: 0;

@@ -20,7 +20,7 @@
 
 
 
-<div id="mainstyle">
+<div id="wrapper">
 <div id="menu-style" >
 	<nav class="main-menu">
 			<div id="header-menu">
@@ -35,8 +35,8 @@
 			<a href="#">Настройки</a>
 		</nav>
 </div>	
-	<div id="header-style">
-		<input id="showLeft" type = "image" src = "img/menu.png" name = "open" value = "open" alt="Меню" />
+	<div id="header">
+		<input id="showMenu" type = "image" src = "img/menu.png" name = "open" value = "open" alt="Меню" />
 		<form action="new-topic.php">
 		<input id="b-newtopic" type = "image" src = "img/new-topic.png" alt="Новая статья" /></form>
 							
@@ -44,7 +44,7 @@
 </div> <!--header-style -->
 								
 							
-	<div id="content-block">
+	<div id="content">
 <form method="POST" action="index.php">
 <input name="header" id="header-newtopic" type="text" placeholder="Заголовок" maxlength="100">
 <textarea name="topics" maxlength="1000000"></textarea><br>
@@ -53,7 +53,7 @@
 
 
 
-	<div id="lower-info"></div>
+	<div id="footer"></div>
 	</div>
 
 

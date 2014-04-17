@@ -25,8 +25,8 @@ echo 'Вы не заполнили поля';
 
 
 
-<div id="mainstyle">
-<div id="menu-style" >
+<div id="wrapper">
+<div id="sidebar" >
     <nav class="main-menu">
             <div id="header-menu">
             <input name="login" type="text" placeholder="Логин"/>
@@ -40,8 +40,8 @@ echo 'Вы не заполнили поля';
             <a href="#">Настройки</a>
         </nav>
 </div>    
-    <div id="header-style">
-        <input id="showLeft" type = "image" src = "img/menu.png" name = "open" value = "open" alt="Меню" />
+    <div id="header">
+        <input id="showMenu" type = "image" src = "img/menu.png" name = "open" value = "open" alt="Меню" />
         <form action="new-topic.php">
         <input id="b-newtopic" type = "image" src = "img/new-topic.png" alt="Новая статья" /></form>
         
@@ -50,7 +50,7 @@ echo 'Вы не заполнили поля';
 </div> <!--header-style -->
                                 
                             
-    <div id="content-block">
+    <div id="content">
         
 
 
@@ -84,7 +84,7 @@ echo 'Вы не заполнили поля';
 </form>
     </div></div>
     
-    <div id="lower-info"></div>
+    <div id="footer"></div>
     </div>
 
 

@@ -24,34 +24,50 @@
 
 
 
-<div id="mainstyle">
-	<div id="header-style">
-		<input id="showLeft" type = "image" src = "img/menu.png" name = "open" value = "open" alt="Меню" />
 
+<div id="wrapper">
+<div id="sidebar" >
+	<div id="header-menu">
+			
+                            <div class="username">   
+                                <span class="user-icon"></span>
+                                <input name="login" type="text" placeholder="Логин"/></div>
+                            <div class="password">
+                                <span class="password-icon"></span>
+                                <input name="password" type="password" placeholder="Пароль"/></div>
+                            <span class="forgot-password"><a href="#">Забыли пароль?</a></span>
+			<form action="register.php">
+			<button type="submit" class="reg-button">Регистрация</button></form> 
+			<form method = "POST"> 
+			<button class="sign-in" name="login">Войти</button>
+			</form></div>
+                        <nav class="main-menu">
+			<a href="index.php">Главная страница</a>
+			<a href="#">Настройки</a>
+		</nav>
+</div>
+	<div id="header">
+		<input id="showMenu" type = "image" src = "img/menu.png" name = "open" value = "open" alt="Меню" />
 		<form action="new-topic.php">
 		<input id="b-newtopic" type = "image" src = "img/new-topic.png" alt="Новая статья" /></form>
 							
 
-
-</div> 
-    
+</div> <!--header-style -->
 								
 							
-	<div id="content-block">
-
+	<div id="content">
 
 <?php 
 		if (isset($posts) && $post = $posts->getPosts()) {
 			foreach ($post as $key) { 
-		 		echo '<div id="title-topic">'.$key['title']."<br>"."</div>" ; 
-		 		echo '<div id="content-topic">'.$key['content']."<br>"."</div>" ;
-		 		echo '<div id="info-topic">'.$key['date']."<br>"."</div>" ;  
+		 		echo '<div id="title-topic">'.$key['title']."</div>" ; 
+		 		echo '<div id="content-topic">'.$key['content']."</div>" ;
+		 		echo '<div id="info-topic">'.$key['date']."</div>" ;  
 			} 	
 		}	
 ?>
-	<div id="lower-info"></div>
-	</div></div>
-
+	<div id="footer">© Sapphire-CMS 2014</div>
+	</div>
 
 
 	</body>
